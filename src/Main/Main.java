@@ -7,17 +7,57 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Suma s = new Suma();
+		Resta r = new Resta();
 		Scanner sc = new Scanner(System.in);
-
-		System.out.println("Introduzca el primer número: ");
-		int n1 = sc.nextInt();
-		System.out.println("Introduzca el segundo número: ");
-		int n2 = sc.nextInt();
-		s.sumaDosNums(n1,n2);
 		
-		System.out.println("Introduzca el número para la suma acumulada: ");
-		int nAcumulado = sc.nextInt();
-		s.sumaAcumulada(nAcumulado);
+		int menu=1;
+		
+		while(menu!=0) {
+			
+			System.out.println("¿Que operación desea hacer?");
+			System.out.println("1-Suma de dos números");
+			System.out.println("2-Suma acumulada");
+			System.out.println("3-Resta de dos números");
+			System.out.println("4-Resta acumulada");
+			System.out.println("0-Salir");
+			menu = sc.nextInt();
+			switch(menu){
+			case 1:
+				System.out.println("Introduzca el primer número: ");
+				int n1 = sc.nextInt();
+				System.out.println("Introduzca el segundo número: ");
+				int n2 = sc.nextInt();
+				s.sumaDosNums(n1,n2);
+				break;
+			case 2:
+				System.out.println("Introduzca el número para la suma acumulada: ");
+				int nAcumulado = sc.nextInt();
+				s.sumaAcumulada(nAcumulado);
+				break;
+			case 3:
+				System.out.println("Introduzca el primer número: ");
+				int nR1 = sc.nextInt();
+				System.out.println("Introduzca el segundo número: ");
+				int nR2 = sc.nextInt();
+				r.restaDosNums(nR1, nR2);
+				break;
+			case 4:
+				System.out.println("Introduzca el número para la resta acumulada: ");
+				int nAcumuladoR = sc.nextInt();
+				r.restaAcumulada(nAcumuladoR);
+				break;
+			}
+			
+		}
+		
+		
+	
+		
+		
+		
+		
+		
+		
 	}
 	
 	
