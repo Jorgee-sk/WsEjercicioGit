@@ -5,7 +5,7 @@ public class Suma {
 	int nAc=0;
 	
 	//Este comentario es para hacer un commit en la branch de suma
-	
+	//Comentario de conflicto de la rama main
 	
 	public void sumaDosNums(int n1, int n2) {
 		int nAux;
