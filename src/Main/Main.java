@@ -6,9 +6,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		//ESTE COMENTARIO CREA UN COMMIT EN EL MAIN
+	/*	//ESTE COMENTARIO CREA UN COMMIT EN EL MAIN
+<<<<<<< HEAD
 		//Comentario desde repositorio 2
+=======
+		//Comentario desde repo 1
+>>>>>>> 6950e1973b71a011d6100b1d0794205df085589d
+		*/
 		
+		//Solucionado merge conflict
 		Suma s = new Suma();
 		Resta r = new Resta();
 		Scanner sc = new Scanner(System.in);
